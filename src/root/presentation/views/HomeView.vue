@@ -50,7 +50,6 @@
         <h2 class="text-4xl font-bold text-center">Our fleet</h2>
 
         <div class="pt-8 flex justify-between gap-4">
-
             <div class="card w-96 bg-base-200 shadow-xl">
                 <figure class="px-10 pt-10">
                     <img
@@ -64,23 +63,53 @@
 
                     <div class="flex justify-between">
                         <div class="rating rating-sm">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                            <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 bg-primary"
+                            />
+                            <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 bg-primary"
+                                checked
+                            />
+                            <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 bg-primary"
+                            />
+                            <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 bg-primary"
+                            />
+                            <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 bg-primary"
+                            />
                         </div>
-    
-                        <span class="font-bold">
-                            $ 9000
-                        </span>
+
+                        <span class="font-bold"> $ 9000 </span>
                     </div>
 
                     <div class="flex justify-center">
                         <div class="card-actions">
                             <button class="btn btn-primary btn-outline gap-2">
                                 Rent a car
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-arrow-narrow-right"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path d="M5 12l14 0"></path>
                                     <path d="M15 16l4 -4"></path>
@@ -104,23 +133,53 @@
 
                     <div class="flex justify-between">
                         <div class="rating rating-sm">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                            <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 bg-primary"
+                            />
+                            <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 bg-primary"
+                                checked
+                            />
+                            <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 bg-primary"
+                            />
+                            <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 bg-primary"
+                            />
+                            <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 bg-primary"
+                            />
                         </div>
-    
-                        <span class="font-bold">
-                            $ 9000
-                        </span>
+
+                        <span class="font-bold"> $ 9000 </span>
                     </div>
 
                     <div class="flex justify-center">
                         <div class="card-actions">
                             <button class="btn btn-primary btn-outline gap-2">
                                 Rent a car
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-arrow-narrow-right"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path d="M5 12l14 0"></path>
                                     <path d="M15 16l4 -4"></path>
@@ -144,23 +203,53 @@
 
                     <div class="flex justify-between">
                         <div class="rating rating-sm">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                            <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 bg-primary"
+                            />
+                            <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 bg-primary"
+                                checked
+                            />
+                            <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 bg-primary"
+                            />
+                            <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 bg-primary"
+                            />
+                            <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 bg-primary"
+                            />
                         </div>
-    
-                        <span class="font-bold">
-                            $ 9000
-                        </span>
+
+                        <span class="font-bold"> $ 9000 </span>
                     </div>
 
                     <div class="flex justify-center">
                         <div class="card-actions">
                             <button class="btn btn-primary btn-outline gap-2">
                                 Rent a car
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-arrow-narrow-right"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path d="M5 12l14 0"></path>
                                     <path d="M15 16l4 -4"></path>
@@ -171,7 +260,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 </template>
