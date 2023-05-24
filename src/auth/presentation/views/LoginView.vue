@@ -6,7 +6,6 @@
                     <h2 class="card-title text-center">Login</h2>
 
                     <LoginForm />
-
                 </div>
             </div>
 
@@ -27,7 +26,5 @@
 </template>
 
 <script lang="ts" setup>
-import LoginForm from '../components/LoginForm.vue';
-
-
+import LoginForm from '../components/LoginForm.vue'
 </script>
