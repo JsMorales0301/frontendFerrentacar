@@ -19,12 +19,18 @@
                     </svg>
                 </label>
             </div>
-            <RouterLink :to="{ name: 'home' }" class="btn btn-ghost normal-case text-xl">FerRentaCar</RouterLink>
+            <RouterLink :to="{ name: 'home' }" class="btn btn-ghost normal-case text-xl"
+                >FerRentaCar</RouterLink
+            >
         </div>
         <div class="navbar-center hidden lg:flex"></div>
         <div class="navbar-end gap-2">
-            <RouterLink :to="{ name: 'login-user' }" class="btn btn-primary">Iniciar sesión</RouterLink>
-            <a class="btn">Registro</a>
+            <RouterLink :to="{ name: 'login-user' }" class="btn btn-primary"
+                >Login</RouterLink
+            >
+            <RouterLink :to="{ name: 'register-user' }" class="btn btn-primary">
+                Register
+            </RouterLink>
         </div>
     </div>
 </template>
