@@ -4,9 +4,9 @@ class ApiAdapter {
 
     private axiosInstance: AxiosInstance;
 
-    constructor(baseURL: string){
+    constructor(){
         this.axiosInstance = axios.create({
-            baseURL,
+            baseURL: 'http://localhost:5283/api/v1',
             timeout: 10000,
             headers: {
                 'Content-Type': 'application/json'
