@@ -1,10 +1,10 @@
 <template>
     <div class="h-screen w-screen flex justify-center items-center">
         <div class="flex flex-col items-center gap-4">
+            
             <div class="card w-96 bg-base-200 shadow-md">
                 <div class="card-body">
                     <h2 class="card-title text-center">Login</h2>
-
                     <LoginForm />
                 </div>
             </div>
