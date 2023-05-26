@@ -1,3 +1,4 @@
 export const authEndpoints = {
-    login: '/Account/Login'
+    login: '/Account/Login',
+    register: '/Account/Register'
 }
