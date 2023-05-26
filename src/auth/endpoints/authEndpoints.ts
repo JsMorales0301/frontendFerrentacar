@@ -1,5 +1,3 @@
-
-
 export const authEndpoints = {
-    'login': '/Account/Login'
+    login: '/Account/Login'
 }
