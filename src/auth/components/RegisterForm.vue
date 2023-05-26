@@ -56,7 +56,7 @@
                     <span class="label-text">Birthdate</span>
                 </label>
                 <input
-                    v-model="unconvertedDate" 
+                    v-model="unconvertedDate"
                     type="date"
                     placeholder="example@ferrentacar.com"
                     class="input input-bordered w-full"
@@ -83,7 +83,11 @@
                 <label class="label">
                     <span class="label-text">Profile Photo</span>
                 </label>
-                <input type="file" class="file-input file-input-bordered w-full" @change="uploadImage" />
+                <input
+                    type="file"
+                    class="file-input file-input-bordered w-full"
+                    @change="uploadImage"
+                />
             </div>
         </div>
 
@@ -108,27 +112,27 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import type { RegisterRequest } from '../interfaces/registerRequests';
-import { AxiosCloudinarySingleton } from '../../api/cloudinary';
+import { ref } from 'vue'
+import type { RegisterRequest } from '../interfaces/registerRequests'
+import { AxiosCloudinarySingleton } from '../../api/cloudinary'
 
-import { useAuthStore } from '../store/authStore';
+import { useAuthStore } from '../store/authStore'
 
 const dataRegister = ref<RegisterRequest>({
     numeroDeIdentificacion: '',
-    urlFotoPerfil:          '',
-    nombre:                 '',
-    apellido:               '',
-    fechaNacimiento:        '',
-    email:                  '',
-    password:               '',
-    telefono:               '',
-    estado:                 true,
+    urlFotoPerfil: '',
+    nombre: '',
+    apellido: '',
+    fechaNacimiento: '',
+    email: '',
+    password: '',
+    telefono: '',
+    estado: true
 })
 
 const unconvertedDate = ref()
 const imageProfile = ref()
-const CLOUDINARY_PRESET_PROFILE = 'profile-ferrentacar';
+const CLOUDINARY_PRESET_PROFILE = 'profile-ferrentacar'
 const auth = useAuthStore()
 
 const uploadImage = (event: any) => {
@@ -137,23 +141,21 @@ const uploadImage = (event: any) => {
 
 const dateFormatISO = (date: any) => {
     const fecha = new Date(date)
-    const fechaISO = fecha.toISOString();
+    const fechaISO = fecha.toISOString()
     return fechaISO
 }
 
-const saveImageCloudinary = async() => {
-    const formData = new FormData();
-    formData.append('upload_preset', CLOUDINARY_PRESET_PROFILE);
+const saveImageCloudinary = async () => {
+    const formData = new FormData()
+    formData.append('upload_preset', CLOUDINARY_PRESET_PROFILE)
     formData.append('file', imageProfile.value)
     const { data } = await AxiosCloudinarySingleton.getInstance().post('/upload', formData)
     dataRegister.value.urlFotoPerfil = data.secure_url
 }
 
-const createNewUser = async() => {
+const createNewUser = async () => {
     await saveImageCloudinary()
-    dataRegister.value.fechaNacimiento = dateFormatISO(unconvertedDate.value);
+    dataRegister.value.fechaNacimiento = dateFormatISO(unconvertedDate.value)
     await auth.registerUser(dataRegister.value)
 }
-
-
 </script>
