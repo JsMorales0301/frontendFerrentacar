@@ -53,7 +53,7 @@
         <h2 class="text-4xl font-bold text-center">Our Fleet</h2>
 
         <div class="pt-8 flex justify-between gap-4">
-            <div class="card w-96 bg-base-200 shadow-xl">
+            <div class="card w-96 bg-base-200 shadow-xl animate__animated animate__fadeIn">
                 <figure class="px-10 pt-10">
                     <img
                         src="https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/d64282b9-f766-4956-873f-5886ff78704b/dee4fe50-a57a-4d51-8384-47b3d86bfccc.png"
@@ -123,7 +123,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card w-96 bg-base-200 shadow-xl">
+            <div class="card w-96 bg-base-200 shadow-xl animate__animated animate__fadeIn">
                 <figure class="px-10 pt-10">
                     <img
                         src="https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/d64282b9-f766-4956-873f-5886ff78704b/dee4fe50-a57a-4d51-8384-47b3d86bfccc.png"
@@ -193,7 +193,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card w-96 bg-base-200 shadow-xl">
+            <div class="card w-96 bg-base-200 shadow-xl animate__animated animate__fadeIn">
                 <figure class="px-10 pt-10">
                     <img
                         src="https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/d64282b9-f766-4956-873f-5886ff78704b/dee4fe50-a57a-4d51-8384-47b3d86bfccc.png"
@@ -613,8 +613,12 @@
 import NavBar from '../components/NavBar.vue'
 import { useAuthStore } from '../../auth/store/authStore'
 import NavbarAuthenticated from '@/shared/components/NavbarAuthenticated.vue'
-import WelcomeHeader from '../components/WelcomeHeader.vue';
+import WelcomeHeader from '../components/WelcomeHeader.vue'
 const auth = useAuthStore()
 </script>
 
-<style scoped></style>
+<style scoped>
+.animation {
+    animation: pulse;
+}
+</style>

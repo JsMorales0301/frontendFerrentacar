@@ -1,4 +1,5 @@
 import { authRoute } from '@/auth/router/auth.route'
+import { userRoute } from '@/user/router/user.route'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -11,6 +12,9 @@ const router = createRouter({
         },
         {
             ...authRoute
+        },
+        {
+            ...userRoute
         }
     ]
 })

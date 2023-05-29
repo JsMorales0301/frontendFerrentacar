@@ -46,5 +46,18 @@ export const useAuthStore = defineStore('auth', () => {
         }
     }
 
-    return { dataUser, loginUser, registerUser }
+    async function sendEmail(email: string) {
+        try {
+            const { status } = await AxiosSingleton.getInstance().post(authEndpoints.sendEmail, {
+                email: email
+            })
+
+            return status
+        } catch (error) {
+            console.log(error)
+            return 400
+        }
+    }
+
+    return { dataUser, loginUser, registerUser, sendEmail }
 })
